@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    android:background="@color/white"
+    tools:context=".PracticeMenuActivity">
+
+    <TextView
+        android:id="@+id/tv_menu_scores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/playfair_bold"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:text="Scores"/>
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:padding="12dp"
+        android:textSize="12dp"
+        android:background="@drawable/stroke_tv"
+        android:layout_below="@+id/tv_menu_scores"
+        android:fontFamily="@font/poppins_regular"
+        android:ellipsize="end"
+        android:textColor="@color/dark_grey"
+        android:text="@string/dummy_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_backtomenu"
+        android:layout_below="@+id/tv_description"
+        android:layout_marginTop="18dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_listening_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_primary"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Listening Score"
+            android:textColor="@color/black"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn_reading_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_primary"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Reading Score"
+            android:textColor="@color/black"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn_structure_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_primary"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Structure Score"
+            android:textColor="@color/black"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn_pretest_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_primary"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Pre Test Score"
+            android:textColor="@color/black"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn_posttest_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_primary"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Post Test Score"
+            android:textColor="@color/black"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn_complete_toefl_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_primary"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Complete TOEFL Test score"
+            android:textColor="@color/black"
+            app:backgroundTint="@null" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_backtomenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_secondary"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Menu utama"
+        android:textColor="@color/black"
+        app:backgroundTint="@null" />
+
+</RelativeLayout>

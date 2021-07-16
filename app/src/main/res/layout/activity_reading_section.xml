@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    tools:context=".practice.ReadingSectionActivity">
+
+    <Button
+        android:id="@+id/btn_exit_section"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/btn_cancel"
+        android:layout_alignParentTop="true"
+        android:text="Exit Section"
+        android:textColor="@color/danger_color"
+        android:fontFamily="@font/poppins_regular"
+        app:backgroundTint="@null"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_exit_section"
+        android:layout_marginTop="18dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dummy_text"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp">
+
+
+            <RadioButton
+                android:text="Real Madrid"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="14dp"/>
+
+            <RadioButton
+                android:text="Liverpool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="14dp"
+                android:layout_marginTop="18dp"
+                android:id="@+id/radioButton2"/>
+
+            <RadioButton
+                android:text="Barcelona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="14dp"
+                android:layout_marginTop="18dp"
+                android:id="@+id/radioButton3"/>
+
+            <RadioButton
+                android:text="Juventus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="14dp"
+                android:layout_marginTop="18dp"
+                android:id="@+id/radioButton4"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_prev"
+        android:layout_width="164dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_primary"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Prev"
+        android:textColor="@color/black"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="164dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_primary"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Next"
+        android:textColor="@color/black"
+        app:backgroundTint="@null" />
+
+</RelativeLayout>
