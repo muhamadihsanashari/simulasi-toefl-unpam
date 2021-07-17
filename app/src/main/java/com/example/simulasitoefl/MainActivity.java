@@ -1,56 +1,65 @@
 package com.example.simulasitoefl;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.Toast;
 
-import com.example.simulasitoefl.menu.CardViewMenuUtamaAdapter;
-import com.example.simulasitoefl.menu.MenuUtama;
-import com.example.simulasitoefl.menu.MenuUtamaData;
+import com.example.simulasitoefl.menu.PracticeMenuActivity;
+import com.example.simulasitoefl.menu.ScoresMenuActivity;
+import com.example.simulasitoefl.menu.TestingMenuActivity;
 
-import java.util.ArrayList;
-
-public class MainActivity extends AppCompatActivity {
-
-    private RecyclerView rvMenus;
-    private ArrayList<MenuUtama> list = new ArrayList<>();
-
-    private ImageView btnImageProfileView;
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnImageProfileView = findViewById(R.id.iv_avatar);
-        btnImageProfileView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity( new Intent(MainActivity.this, ProfileActivity.class));
-            }
-        });
+        Button btnPractice = findViewById(R.id.btn_practice);
+        btnPractice.setOnClickListener(this);
 
-        rvMenus = findViewById(R.id.rv_menus);
-        rvMenus.setHasFixedSize(true);
+        Button btnTesting = findViewById(R.id.btn_testing);
+        btnTesting.setOnClickListener(this);
 
-        list.addAll(MenuUtamaData.getListData());
-        showRecyclerCardView();
+        Button btnScores = findViewById(R.id.btn_scores);
+        btnScores.setOnClickListener(this);
+
+        Button btnPreTest = findViewById(R.id.btn_pre_test);
+        btnPreTest.setOnClickListener(this);
+
+        Button btnPostTest = findViewById(R.id.btn_post_test);
+        btnPostTest.setOnClickListener(this);
+
+        Button btnDownload = findViewById(R.id.btn_download_materi);
+        btnDownload.setOnClickListener(this);
+
+        Button btnAbout = findViewById(R.id.btn_about);
+        btnAbout.setOnClickListener(this);
     }
 
-    private void showSelectedMenuUtama(MenuUtama menuUtama) {
-        Toast.makeText(this, "Kamu memilih " + menuUtama.getMenu(), Toast.LENGTH_SHORT).show();
-    }
+    @Override
+    public void onClick(View v) {
+        if (v.getId() == R.id.btn_practice){
+            Intent intent = new Intent(MainActivity.this, PracticeMenuActivity.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.btn_testing){
+            Intent intent = new Intent(MainActivity.this, TestingMenuActivity.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.btn_scores){
+            Intent intent = new Intent(MainActivity.this, ScoresMenuActivity.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.btn_pre_test){
 
-    private void showRecyclerCardView(){
-        rvMenus.setLayoutManager(new LinearLayoutManager(this));
-        CardViewMenuUtamaAdapter cardViewMenuUtamaAdapter = new CardViewMenuUtamaAdapter(list);
-        rvMenus.setAdapter(cardViewMenuUtamaAdapter);
+        }else if (v.getId() == R.id.btn_post_test){
+
+        }else if (v.getId() == R.id.btn_testing){
+
+        }else if (v.getId() == R.id.btn_about){
+            Intent intent = new Intent(MainActivity.this, AboutActivity.class);
+            startActivity(intent);
+        }
     }
 }

@@ -1,14 +1,16 @@
-package com.example.simulasitoefl;
+package com.example.simulasitoefl.menu;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class ScoresMenuActivity extends AppCompatActivity {
+import com.example.simulasitoefl.R;
+
+public class TestingMenuActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_scores_menu);
+        setContentView(R.layout.activity_testing_menu);
     }
 }

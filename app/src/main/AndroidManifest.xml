@@ -9,12 +9,25 @@
         android:roundIcon="@mipmap/ic_simulasi_toefl_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SimulasiTOEFL">
-        <activity android:name=".practice.ReadingSectionActivity"></activity>
-        <activity android:name=".practice.StructureSectionActivity" />
-        <activity android:name=".practice.ListeningSectionActivity" />
-        <activity android:name=".ScoresMenuActivity" />
-        <activity android:name=".TestingMenuActivity" />
-        <activity android:name=".PracticeMenuActivity" />
+        <activity
+            android:name=".AboutActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".practice.ReadingSectionActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".practice.StructureSectionActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".practice.ListeningSectionActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".menu.ScoresMenuActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".menu.TestingMenuActivity" />
+        <activity
+            android:name=".menu.PracticeMenuActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".ProfileActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />

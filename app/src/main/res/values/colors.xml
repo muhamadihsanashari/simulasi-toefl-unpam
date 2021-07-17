@@ -15,4 +15,7 @@
     <color name="light_grey">#E5E5E5</color>
     <color name="dark_grey">#595959</color>
     <color name="danger_color">#FF2E00</color>
+    <color name="listening_color">#5AC4D9</color>
+    <color name="reading_color">#B9CC66</color>
+    <color name="structure_color">#AAA3CE</color>
 </resources>

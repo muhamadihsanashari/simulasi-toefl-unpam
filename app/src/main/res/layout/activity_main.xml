@@ -40,17 +40,90 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/tv_username"
-        android:layout_marginTop="64dp"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_nim"
+        android:orientation="vertical"
+        android:layout_marginTop="64dp">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_menus"
+        <Button
+            android:id="@+id/btn_practice"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:listitem="@layout/menu_item" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_primary"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Practice"
+            android:textColor="@color/black"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn_testing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/btn_primary"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Testing"
+            android:textColor="@color/black"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn_scores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/btn_primary"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Scores"
+            android:textColor="@color/black"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn_pre_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/btn_primary"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Pre Test"
+            android:textColor="@color/black"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn_post_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/btn_primary"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Post Test"
+            android:textColor="@color/black"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btn_download_materi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/btn_primary"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Download Materi"
+            android:textColor="@color/black"
+            app:backgroundTint="@null" />
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/btn_secondary"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Tentang"
+        android:textColor="@color/black"
+        app:backgroundTint="@null" />
 
 </RelativeLayout>
