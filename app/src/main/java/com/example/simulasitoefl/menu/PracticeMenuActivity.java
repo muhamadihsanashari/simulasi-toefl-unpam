@@ -6,10 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.simulasitoefl.ListeningFragment;
+import com.example.simulasitoefl.practice.listening.ListeningFragment;
 import com.example.simulasitoefl.R;
-import com.example.simulasitoefl.ReadingFragment;
-import com.example.simulasitoefl.StructureFragment;
+import com.example.simulasitoefl.practice.reading.ReadingFragment;
+import com.example.simulasitoefl.practice.structure.StructureFragment;
 
 public class PracticeMenuActivity extends AppCompatActivity implements View.OnClickListener{
 

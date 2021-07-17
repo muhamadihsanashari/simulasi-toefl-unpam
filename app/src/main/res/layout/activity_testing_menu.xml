@@ -6,10 +6,10 @@
     android:layout_height="match_parent"
     android:padding="32dp"
     android:background="@color/white"
-    tools:context=".menu.PracticeMenuActivity">
+    tools:context=".menu.TestingMenuActivity">
 
     <TextView
-        android:id="@+id/tv_menu_testing"
+        android:id="@+id/menu_practice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -26,43 +26,65 @@
         android:padding="12dp"
         android:textSize="12dp"
         android:background="@drawable/stroke_tv"
-        android:layout_below="@+id/tv_menu_testing"
+        android:layout_below="@+id/menu_practice"
         android:fontFamily="@font/poppins_regular"
         android:ellipsize="end"
         android:textColor="@color/dark_grey"
-        android:text="@string/practice_desc" />
+        android:text="@string/dummy_text" />
 
-    <LinearLayout
+    <HorizontalScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_description"
+        android:layout_marginTop="18dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_drill_individual"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:background="@drawable/btn_primary"
+                android:drawableTop="@drawable/ic_listening"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Drill Individual Test"
+                android:textColor="@color/black"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btn_complete_test"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:background="@drawable/btn_primary"
+                android:drawableTop="@drawable/ic_reading"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Complete Toefl Test"
+                android:textColor="@color/black"
+                app:backgroundTint="@null" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+
+    <FrameLayout
+        android:id="@+id/fragments_testing"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/btn_backtomenu"
-        android:layout_below="@+id/tv_description"
-        android:layout_marginTop="18dp"
-        android:orientation="vertical">
-
-        <Button
-            android:id="@+id/btn_individual_test_sec"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/btn_primary"
-            android:fontFamily="@font/poppins_bold"
-            android:text="Individual Test Section"
-            android:textColor="@color/black"
-            app:backgroundTint="@null" />
-
-        <Button
-            android:id="@+id/btn_complete_toefl_test"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/btn_primary"
-            android:fontFamily="@font/poppins_bold"
-            android:text="Complete TOEFL Test"
-            android:textColor="@color/black"
-            app:backgroundTint="@null" />
-
-    </LinearLayout>
+        android:layout_below="@+id/scroll_view"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp" />
 
     <Button
         android:id="@+id/btn_backtomenu"

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="32dp"
+    android:background="@color/white"
     tools:context=".practice.StructureSectionActivity">
 
     <Button
@@ -36,7 +37,7 @@
 
         <RadioGroup
             android:id="@+id/radioGroup"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="36dp">
 
@@ -44,38 +45,46 @@
             <RadioButton
                 android:text="Real Madrid"
                 android:foreground="?attr/selectableItemBackground"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/radioButton"
                 android:fontFamily="@font/poppins_bold"
-                android:textSize="14dp"/>
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:buttonTint="@color/black"/>
 
             <RadioButton
                 android:text="Liverpool"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_bold"
                 android:textSize="14dp"
                 android:layout_marginTop="18dp"
-                android:id="@+id/radioButton2"/>
+                android:id="@+id/radioButton2"
+                android:textColor="@color/black"
+                android:buttonTint="@color/black"/>
 
             <RadioButton
                 android:text="Barcelona"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_bold"
                 android:textSize="14dp"
                 android:layout_marginTop="18dp"
-                android:id="@+id/radioButton3"/>
+                android:id="@+id/radioButton3"
+                android:textColor="@color/black"
+                android:buttonTint="@color/black"/>
 
             <RadioButton
                 android:text="Juventus"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_bold"
                 android:textSize="14dp"
                 android:layout_marginTop="18dp"
-                android:id="@+id/radioButton4"/>
+                android:id="@+id/radioButton4"
+                android:textColor="@color/black"
+                android:buttonTint="@color/black"/>
 
         </RadioGroup>
 
@@ -83,24 +92,24 @@
 
     <Button
         android:id="@+id/btn_prev"
-        android:layout_width="164dp"
-        android:layout_height="56dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:background="@drawable/btn_primary"
-        android:fontFamily="@font/poppins_regular"
+        android:fontFamily="@font/poppins_bold"
         android:text="Prev"
         android:textColor="@color/black"
         app:backgroundTint="@null" />
 
     <Button
         android:id="@+id/btn_next"
-        android:layout_width="164dp"
-        android:layout_height="56dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:background="@drawable/btn_primary"
-        android:fontFamily="@font/poppins_regular"
+        android:fontFamily="@font/poppins_bold"
         android:text="Next"
         android:textColor="@color/black"
         app:backgroundTint="@null" />
