@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="32dp"
     android:background="@color/white"
-    tools:context=".menu.PracticeMenuActivity">
+    tools:context=".menu.ScoresMenuActivity">
 
     <TextView
         android:id="@+id/tv_menu_scores"
@@ -17,6 +17,21 @@
         android:textSize="24sp"
         android:textColor="@color/black"
         android:text="Scores"/>
+
+    <Button
+        android:id="@+id/btn_info"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:paddingLeft="30dp"
+        android:layout_above="@+id/tv_description"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/white"
+        android:textColor="@color/teal_200"
+        android:drawableLeft="@drawable/ic_info"
+        android:textAllCaps="false"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="Info"/>
 
     <TextView
         android:id="@+id/tv_description"
@@ -30,12 +45,12 @@
         android:fontFamily="@font/poppins_regular"
         android:ellipsize="end"
         android:textColor="@color/dark_grey"
-        android:text="@string/dummy_text" />
+        android:text="Lihat dan amati hasil pencapaian belajar kamu selama ini." />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/btn_backtomenu"
+        android:layout_above="@+id/btn_mainmenu"
         android:layout_below="@+id/tv_description"
         android:layout_marginTop="18dp"
         android:orientation="vertical">
@@ -109,7 +124,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btn_backtomenu"
+        android:id="@+id/btn_mainmenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

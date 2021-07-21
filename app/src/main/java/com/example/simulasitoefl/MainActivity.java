@@ -7,7 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.simulasitoefl.menu.DownloadMenuActivity;
+import com.example.simulasitoefl.menu.PosttestMenuActivity;
 import com.example.simulasitoefl.menu.PracticeMenuActivity;
+import com.example.simulasitoefl.menu.PretestMenuActivity;
 import com.example.simulasitoefl.menu.ScoresMenuActivity;
 import com.example.simulasitoefl.menu.TestingMenuActivity;
 
@@ -52,11 +55,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent intent = new Intent(MainActivity.this, ScoresMenuActivity.class);
             startActivity(intent);
         }else if (v.getId() == R.id.btn_pre_test){
-
+            Intent intent = new Intent(MainActivity.this, PretestMenuActivity.class);
+            startActivity(intent);
         }else if (v.getId() == R.id.btn_post_test){
-
-        }else if (v.getId() == R.id.btn_testing){
-
+            Intent intent = new Intent(MainActivity.this, PosttestMenuActivity.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.btn_download_materi){
+            Intent intent = new Intent(MainActivity.this, DownloadMenuActivity.class);
+            startActivity(intent);
         }else if (v.getId() == R.id.btn_about){
             Intent intent = new Intent(MainActivity.this, AboutActivity.class);
             startActivity(intent);

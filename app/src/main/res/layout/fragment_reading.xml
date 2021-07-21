@@ -27,10 +27,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="@drawable/btn_reading"
-            android:fontFamily="@font/poppins_bold"
+            android:background="@drawable/btn_primary"
+            android:fontFamily="@font/poppins_regular"
             android:text="Easy Passages"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
             app:backgroundTint="@null" />
 
         <Button
@@ -38,10 +39,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="@drawable/btn_reading"
-            android:fontFamily="@font/poppins_bold"
+            android:background="@drawable/btn_primary"
+            android:fontFamily="@font/poppins_regular"
             android:text="Medium Passages"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
             app:backgroundTint="@null" />
 
         <Button
@@ -49,10 +51,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="@drawable/btn_reading"
-            android:fontFamily="@font/poppins_bold"
+            android:background="@drawable/btn_primary"
+            android:fontFamily="@font/poppins_regular"
             android:text="Difficult Passages"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
             app:backgroundTint="@null" />
 
     </LinearLayout>

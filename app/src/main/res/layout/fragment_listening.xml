@@ -27,10 +27,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="@drawable/btn_listening"
-            android:fontFamily="@font/poppins_bold"
+            android:background="@drawable/btn_primary"
+            android:fontFamily="@font/poppins_regular"
             android:text="Short Dialogues"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
             app:backgroundTint="@null" />
 
         <Button
@@ -38,10 +39,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="@drawable/btn_listening"
-            android:fontFamily="@font/poppins_bold"
+            android:background="@drawable/btn_primary"
+            android:fontFamily="@font/poppins_regular"
             android:text="Casual Convertation"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
             app:backgroundTint="@null" />
 
         <Button
@@ -49,10 +51,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="@drawable/btn_listening"
-            android:fontFamily="@font/poppins_bold"
+            android:background="@drawable/btn_primary"
+            android:fontFamily="@font/poppins_regular"
             android:text="Academic Discussions"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
             app:backgroundTint="@null" />
 
         <Button
@@ -60,10 +63,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="@drawable/btn_listening"
-            android:fontFamily="@font/poppins_bold"
+            android:background="@drawable/btn_primary"
+            android:fontFamily="@font/poppins_regular"
             android:text="Academic Lectures"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
             app:backgroundTint="@null" />
 
     </LinearLayout>

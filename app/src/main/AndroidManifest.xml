@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SimulasiTOEFL">
         <activity
+            android:name=".menu.DownloadMenuActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".menu.PosttestMenuActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".menu.PretestMenuActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
             android:name=".AboutActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
@@ -24,7 +33,9 @@
         <activity
             android:name=".menu.ScoresMenuActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".menu.TestingMenuActivity" />
+        <activity
+            android:name=".menu.TestingMenuActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".menu.PracticeMenuActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />

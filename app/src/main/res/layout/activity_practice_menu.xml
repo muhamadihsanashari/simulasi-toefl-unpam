@@ -18,6 +18,21 @@
         android:textColor="@color/black"
         android:text="Practice"/>
 
+    <Button
+        android:id="@+id/btn_info"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:paddingLeft="30dp"
+        android:layout_above="@+id/tv_description"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/white"
+        android:textColor="@color/teal_200"
+        android:drawableLeft="@drawable/ic_info"
+        android:textAllCaps="false"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="Info"/>
+
     <TextView
         android:id="@+id/tv_description"
         android:layout_width="match_parent"
@@ -30,7 +45,7 @@
         android:fontFamily="@font/poppins_regular"
         android:ellipsize="end"
         android:textColor="@color/dark_grey"
-        android:text="@string/dummy_text" />
+        android:text="Eksplorasi lebih banyak latihan berdasarkan kategori soal yang ada. Pada Menu Practice ini kamu dapat mencoba berkali-kali, tanpa ada batasan!" />
 
     <HorizontalScrollView
         android:id="@+id/scroll_view"
@@ -94,13 +109,13 @@
         android:id="@+id/fragments"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/btn_backtomenu"
+        android:layout_above="@+id/btn_mainmenu"
         android:layout_below="@+id/scroll_view"
         android:layout_marginTop="12dp"
         android:layout_marginBottom="12dp" />
 
     <Button
-        android:id="@+id/btn_backtomenu"
+        android:id="@+id/btn_mainmenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
