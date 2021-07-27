@@ -13,7 +13,7 @@
         android:fontFamily="@font/playfair_regular"
         android:textSize="18sp"
         android:textColor="@color/dark_grey"
-        android:text="Practice - Reading"/>
+        android:text="@string/practice_reading"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,7 +29,7 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/btn_primary"
             android:fontFamily="@font/poppins_regular"
-            android:text="Easy Passages"
+            android:text="@string/easy_passages"
             android:textColor="@color/black"
             android:textAllCaps="false"
             app:backgroundTint="@null" />
@@ -41,7 +41,7 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/btn_primary"
             android:fontFamily="@font/poppins_regular"
-            android:text="Medium Passages"
+            android:text="@string/medium_passages"
             android:textColor="@color/black"
             android:textAllCaps="false"
             app:backgroundTint="@null" />
@@ -53,7 +53,7 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/btn_primary"
             android:fontFamily="@font/poppins_regular"
-            android:text="Difficult Passages"
+            android:text="@string/difficult_passages"
             android:textColor="@color/black"
             android:textAllCaps="false"
             app:backgroundTint="@null" />

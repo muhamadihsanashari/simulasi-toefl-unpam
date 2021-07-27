@@ -14,9 +14,10 @@
         android:layout_height="wrap_content"
         android:background="@drawable/btn_cancel"
         android:layout_alignParentTop="true"
-        android:text="Exit Section"
+        android:text="@string/exit_section"
         android:textColor="@color/danger_color"
         android:fontFamily="@font/poppins_regular"
+        android:textAllCaps="false"
         app:backgroundTint="@null"/>
 
     <LinearLayout
@@ -45,6 +46,7 @@
             android:id="@+id/tv_song_current_duration"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="0:00"
             android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
 
@@ -53,13 +55,15 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:progressBackgroundTint="@color/dark_grey"
             android:progress="0" />
 
         <TextView
             android:id="@+id/tv_song_total_duration"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp"
+            android:textColor="@color/black"
             android:text="0:00"
             android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
 
@@ -91,13 +95,12 @@
             <RadioButton
                 android:id="@+id/radioButton"
                 android:text="Real Madrid"
-                android:foreground="?attr/selectableItemBackground"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_bold"
                 android:textColor="@color/black"
                 android:buttonTint="@color/black"
-                android:textSize="14dp"/>
+                android:textSize="14sp"/>
 
             <RadioButton
                 android:id="@+id/radioButton2"
@@ -105,7 +108,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_bold"
-                android:textSize="14dp"
+                android:textSize="14sp"
                 android:layout_marginTop="18dp"
                 android:textColor="@color/black"
                 android:buttonTint="@color/black"/>
@@ -116,7 +119,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_bold"
-                android:textSize="14dp"
+                android:textSize="14sp"
                 android:layout_marginTop="18dp"
                 android:textColor="@color/black"
                 android:buttonTint="@color/black" />
@@ -127,7 +130,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_bold"
-                android:textSize="14dp"
+                android:textSize="14sp"
                 android:layout_marginTop="18dp"
                 android:textColor="@color/black"
                 android:buttonTint="@color/black" />
@@ -143,9 +146,10 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:background="@drawable/btn_primary"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Prev"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/prev"
         android:textColor="@color/black"
+        android:textAllCaps="false"
         app:backgroundTint="@null" />
 
     <Button
@@ -155,9 +159,10 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:background="@drawable/btn_primary"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Next"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/next"
         android:textColor="@color/black"
+        android:textAllCaps="false"
         app:backgroundTint="@null" />
 
 </RelativeLayout>

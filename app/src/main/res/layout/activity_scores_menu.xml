@@ -16,22 +16,22 @@
         android:fontFamily="@font/playfair_bold"
         android:textSize="24sp"
         android:textColor="@color/black"
-        android:text="Scores"/>
+        android:text="@string/scores"/>
 
     <Button
         android:id="@+id/btn_info"
         android:layout_width="wrap_content"
         android:layout_height="24dp"
-        android:paddingLeft="30dp"
+        android:paddingStart="30dp"
         android:layout_above="@+id/tv_description"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="0dp"
         android:background="@color/white"
         android:textColor="@color/teal_200"
-        android:drawableLeft="@drawable/ic_info"
+        android:drawableStart="@drawable/ic_info"
         android:textAllCaps="false"
         style="?android:attr/borderlessButtonStyle"
-        android:text="Info"/>
+        android:text="@string/info"/>
 
     <TextView
         android:id="@+id/tv_description"
@@ -39,13 +39,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:padding="12dp"
-        android:textSize="12dp"
+        android:textSize="12sp"
         android:background="@drawable/stroke_tv"
         android:layout_below="@+id/tv_menu_scores"
         android:fontFamily="@font/poppins_regular"
         android:ellipsize="end"
         android:textColor="@color/dark_grey"
-        android:text="Lihat dan amati hasil pencapaian belajar kamu selama ini." />
+        android:text="@string/scores_description" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -61,9 +61,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/btn_primary"
-            android:fontFamily="@font/poppins_bold"
-            android:text="Listening Score"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/listening_score"
             android:textColor="@color/black"
+            android:textAllCaps="false"
             app:backgroundTint="@null" />
 
         <Button
@@ -72,9 +73,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/btn_primary"
-            android:fontFamily="@font/poppins_bold"
-            android:text="Reading Score"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/reading_score"
             android:textColor="@color/black"
+            android:textAllCaps="false"
             app:backgroundTint="@null" />
 
         <Button
@@ -83,9 +85,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/btn_primary"
-            android:fontFamily="@font/poppins_bold"
-            android:text="Structure Score"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/structure_score"
             android:textColor="@color/black"
+            android:textAllCaps="false"
             app:backgroundTint="@null" />
 
         <Button
@@ -94,9 +97,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/btn_primary"
-            android:fontFamily="@font/poppins_bold"
-            android:text="Pre Test Score"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/pre_test_score"
             android:textColor="@color/black"
+            android:textAllCaps="false"
             app:backgroundTint="@null" />
 
         <Button
@@ -105,9 +109,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/btn_primary"
-            android:fontFamily="@font/poppins_bold"
-            android:text="Post Test Score"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/post_test_score"
             android:textColor="@color/black"
+            android:textAllCaps="false"
             app:backgroundTint="@null" />
 
         <Button
@@ -116,9 +121,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/btn_primary"
-            android:fontFamily="@font/poppins_bold"
-            android:text="Complete TOEFL Test score"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/complete_toefl_test_score"
             android:textColor="@color/black"
+            android:textAllCaps="false"
             app:backgroundTint="@null" />
 
     </LinearLayout>
@@ -131,9 +137,10 @@
         android:layout_gravity="bottom"
         android:layout_marginTop="8dp"
         android:background="@drawable/btn_secondary"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Menu utama"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/main_menu"
         android:textColor="@color/black"
+        android:textAllCaps="false"
         app:backgroundTint="@null" />
 
 </RelativeLayout>

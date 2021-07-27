@@ -16,7 +16,7 @@
         android:fontFamily="@font/playfair_bold"
         android:textSize="24sp"
         android:textColor="@color/black"
-        android:text="Practice"/>
+        android:text="@string/practice"/>
 
     <Button
         android:id="@+id/btn_info"
@@ -45,7 +45,7 @@
         android:fontFamily="@font/poppins_regular"
         android:ellipsize="end"
         android:textColor="@color/dark_grey"
-        android:text="Eksplorasi lebih banyak latihan berdasarkan kategori soal yang ada. Pada Menu Practice ini kamu dapat mencoba berkali-kali, tanpa ada batasan!" />
+        android:text="@string/practice_description" />
 
     <HorizontalScrollView
         android:id="@+id/scroll_view"
@@ -69,7 +69,7 @@
                 android:background="@drawable/btn_primary"
                 android:drawableTop="@drawable/ic_listening"
                 android:fontFamily="@font/poppins_bold"
-                android:text="Listening"
+                android:text="@string/listening"
                 android:textColor="@color/black"
                 app:backgroundTint="@null" />
 
@@ -82,7 +82,7 @@
                 android:background="@drawable/btn_primary"
                 android:drawableTop="@drawable/ic_reading"
                 android:fontFamily="@font/poppins_bold"
-                android:text="Reading"
+                android:text="@string/reading"
                 android:textColor="@color/black"
                 app:backgroundTint="@null" />
 
@@ -95,7 +95,7 @@
                 android:background="@drawable/btn_primary"
                 android:drawableTop="@drawable/ic_structure"
                 android:fontFamily="@font/poppins_bold"
-                android:text="Structure"
+                android:text="@string/structure"
                 android:textColor="@color/black"
                 app:backgroundTint="@null" />
 
@@ -122,9 +122,10 @@
         android:layout_gravity="bottom"
         android:layout_marginTop="8dp"
         android:background="@drawable/btn_secondary"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Menu utama"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/main_menu"
         android:textColor="@color/black"
+        android:textAllCaps="false"
         app:backgroundTint="@null" />
 
 </RelativeLayout>

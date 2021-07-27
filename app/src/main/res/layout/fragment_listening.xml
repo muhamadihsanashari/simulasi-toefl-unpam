@@ -13,7 +13,7 @@
         android:fontFamily="@font/playfair_regular"
         android:textSize="18sp"
         android:textColor="@color/dark_grey"
-        android:text="Practice - Listening"/>
+        android:text="@string/practice_listening"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,7 +29,7 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/btn_primary"
             android:fontFamily="@font/poppins_regular"
-            android:text="Short Dialogues"
+            android:text="@string/short_dialogues"
             android:textColor="@color/black"
             android:textAllCaps="false"
             app:backgroundTint="@null" />
@@ -41,7 +41,7 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/btn_primary"
             android:fontFamily="@font/poppins_regular"
-            android:text="Casual Convertation"
+            android:text="@string/casual_convertation"
             android:textColor="@color/black"
             android:textAllCaps="false"
             app:backgroundTint="@null" />
@@ -53,7 +53,7 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/btn_primary"
             android:fontFamily="@font/poppins_regular"
-            android:text="Academic Discussions"
+            android:text="@string/academic_discussions"
             android:textColor="@color/black"
             android:textAllCaps="false"
             app:backgroundTint="@null" />
@@ -65,7 +65,7 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/btn_primary"
             android:fontFamily="@font/poppins_regular"
-            android:text="Academic Lectures"
+            android:text="@string/academic_lectures"
             android:textColor="@color/black"
             android:textAllCaps="false"
             app:backgroundTint="@null" />

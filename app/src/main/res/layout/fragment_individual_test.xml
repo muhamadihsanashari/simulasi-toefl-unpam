@@ -31,7 +31,7 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/btn_primary"
             android:fontFamily="@font/poppins_regular"
-            android:text="Listening Test"
+            android:text="@string/listening_test"
             android:textColor="@color/black"
             android:textAllCaps="false"
             app:backgroundTint="@null" />
@@ -43,7 +43,7 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/btn_primary"
             android:fontFamily="@font/poppins_regular"
-            android:text="Reading Test"
+            android:text="@string/reading_test"
             android:textColor="@color/black"
             android:textAllCaps="false"
             app:backgroundTint="@null" />
@@ -55,7 +55,7 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/btn_primary"
             android:fontFamily="@font/poppins_regular"
-            android:text="Structure Test"
+            android:text="@string/structure_test"
             android:textColor="@color/black"
             android:textAllCaps="false"
             app:backgroundTint="@null" />

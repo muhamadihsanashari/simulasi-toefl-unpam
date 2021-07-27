@@ -13,7 +13,7 @@
         android:fontFamily="@font/playfair_regular"
         android:textSize="18sp"
         android:textColor="@color/dark_grey"
-        android:text="Practice - Structure"/>
+        android:text="@string/practice_structure"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,7 +29,7 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/btn_primary"
             android:fontFamily="@font/poppins_regular"
-            android:text="Structure"
+            android:text="@string/structure"
             android:textColor="@color/black"
             android:textAllCaps="false"
             app:backgroundTint="@null" />
@@ -41,7 +41,7 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/btn_primary"
             android:fontFamily="@font/poppins_regular"
-            android:text="Written Expression"
+            android:text="@string/written_expression"
             android:textColor="@color/black"
             android:textAllCaps="false"
             app:backgroundTint="@null" />

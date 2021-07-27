@@ -16,22 +16,22 @@
         android:fontFamily="@font/playfair_bold"
         android:textSize="24sp"
         android:textColor="@color/black"
-        android:text="Testing"/>
+        android:text="@string/testing"/>
 
     <Button
         android:id="@+id/btn_info"
         android:layout_width="wrap_content"
         android:layout_height="24dp"
-        android:paddingLeft="30dp"
+        android:paddingStart="30dp"
         android:layout_above="@+id/tv_description"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="0dp"
         android:background="@color/white"
         android:textColor="@color/teal_200"
-        android:drawableLeft="@drawable/ic_info"
+        android:drawableStart="@drawable/ic_info"
         android:textAllCaps="false"
         style="?android:attr/borderlessButtonStyle"
-        android:text="Info"/>
+        android:text="@string/info"/>
 
     <TextView
         android:id="@+id/tv_description"
@@ -39,13 +39,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:padding="12dp"
-        android:textSize="12dp"
+        android:textSize="12sp"
         android:background="@drawable/stroke_tv"
         android:layout_below="@+id/menu_practice"
         android:fontFamily="@font/poppins_regular"
         android:ellipsize="end"
         android:textColor="@color/dark_grey"
-        android:text="Uji kemampuan kamu! Pada menu Testing ini kamu akan disajikan soal prediksi TOEFL, dan nilai kamu akan dicatat sebagai nilai latihan." />
+        android:text="@string/testing_description" />
 
     <HorizontalScrollView
         android:id="@+id/scroll_view"
@@ -64,12 +64,12 @@
                 android:id="@+id/btn_individual_test"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:padding="10dp"
                 android:background="@drawable/btn_primary"
                 android:drawableTop="@drawable/ic_listening"
                 android:fontFamily="@font/poppins_bold"
-                android:text="Individual Test"
+                android:text="@string/individual_test"
                 android:textColor="@color/black"
                 app:backgroundTint="@null" />
 
@@ -77,12 +77,12 @@
                 android:id="@+id/btn_complete_test"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:padding="10dp"
                 android:background="@drawable/btn_primary"
                 android:drawableTop="@drawable/ic_reading"
                 android:fontFamily="@font/poppins_bold"
-                android:text="Complete Toefl Test"
+                android:text="@string/complete_toefl_test"
                 android:textColor="@color/black"
                 app:backgroundTint="@null" />
 
@@ -109,9 +109,10 @@
         android:layout_gravity="bottom"
         android:layout_marginTop="8dp"
         android:background="@drawable/btn_secondary"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Menu utama"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/main_menu"
         android:textColor="@color/black"
+        android:textAllCaps="false"
         app:backgroundTint="@null" />
 
 </RelativeLayout>
