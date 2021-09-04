@@ -13,18 +13,18 @@ import android.widget.Button;
 
 import com.ihsanashari.simulasitoefl.R;
 
-public class ReadingFragment extends Fragment {
+public class PracticeReadingFragment extends Fragment {
 
     Button btnEasyPassage, btnMediumPassage, btnDifficultPassage;
 
-    public ReadingFragment() {
+    public PracticeReadingFragment() {
         // Required empty public constructor
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_reading, container, false);
+        View view = inflater.inflate(R.layout.fragment_practice_reading, container, false);
 
         btnEasyPassage = (Button) view.findViewById(R.id.btn_easy_passages);
         btnMediumPassage = (Button) view.findViewById(R.id.btn_medium_passages);
@@ -33,7 +33,7 @@ public class ReadingFragment extends Fragment {
         btnEasyPassage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), ReadingSectionActivity.class);
+                Intent intent = new Intent(getActivity(), PracticeReadingSectionActivity.class);
                 startActivity(intent);
                 ((Activity) getActivity()).overridePendingTransition(0,0);
             }
@@ -42,7 +42,7 @@ public class ReadingFragment extends Fragment {
         btnMediumPassage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), ReadingSectionActivity.class);
+                Intent intent = new Intent(getActivity(), PracticeReadingSectionActivity.class);
                 startActivity(intent);
                 ((Activity) getActivity()).overridePendingTransition(0,0);
             }
@@ -51,7 +51,7 @@ public class ReadingFragment extends Fragment {
         btnDifficultPassage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), ReadingSectionActivity.class);
+                Intent intent = new Intent(getActivity(), PracticeReadingSectionActivity.class);
                 startActivity(intent);
                 ((Activity) getActivity()).overridePendingTransition(0,0);
             }

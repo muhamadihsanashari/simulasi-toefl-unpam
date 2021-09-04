@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.ihsanashari.simulasitoefl.R;
-import com.ihsanashari.simulasitoefl.practice.ListeningSectionActivity;
+import com.ihsanashari.simulasitoefl.practice.PracticeListeningSectionActivity;
 
 public class FullTestFragment extends Fragment {
 
@@ -33,7 +33,7 @@ public class FullTestFragment extends Fragment {
         btnFullTest1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), ListeningSectionActivity.class);
+                Intent intent = new Intent(getActivity(), PracticeListeningSectionActivity.class);
                 startActivity(intent);
                 ((Activity) getActivity()).overridePendingTransition(0,0);
             }
@@ -42,7 +42,7 @@ public class FullTestFragment extends Fragment {
         btnFullTest2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), ListeningSectionActivity.class);
+                Intent intent = new Intent(getActivity(), PracticeListeningSectionActivity.class);
                 startActivity(intent);
                 ((Activity) getActivity()).overridePendingTransition(0,0);
             }

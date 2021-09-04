@@ -2,9 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ihsanashari.simulasitoefl">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -14,44 +14,52 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SimulasiTOEFL">
         <activity
-            android:name="com.ihsanashari.simulasitoefl.menu.DownloadMenuActivity"
+            android:name=".testing.TestingStructureSectionActivity"
+            android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".scores.ScoreFullTestScoreActivity" />
+        <activity android:name=".scores.ScoreReadingScoreActivity" />
+        <activity android:name=".scores.ScoreStructureScoreActivity" />
+        <activity android:name=".scores.ScoreListeningScoreActivity" />
         <activity
-            android:name="com.ihsanashari.simulasitoefl.menu.PosttestMenuActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
-        <activity
-            android:name="com.ihsanashari.simulasitoefl.menu.PretestMenuActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
-        <activity
-            android:name="com.ihsanashari.simulasitoefl.AboutActivity"
+            android:name=".menu.DownloadMenuActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name="com.ihsanashari.simulasitoefl.practice.ReadingSectionActivity"
+            android:name=".menu.PosttestMenuActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name="com.ihsanashari.simulasitoefl.practice.StructureSectionActivity"
+            android:name=".menu.PretestMenuActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name="com.ihsanashari.simulasitoefl.practice.ListeningSectionActivity"
+            android:name=".AboutActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name="com.ihsanashari.simulasitoefl.menu.ScoresMenuActivity"
+            android:name=".practice.PracticeReadingSectionActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name="com.ihsanashari.simulasitoefl.menu.TestingMenuActivity"
+            android:name=".practice.PracticeStructureSectionActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name="com.ihsanashari.simulasitoefl.menu.PracticeMenuActivity"
+            android:name=".practice.PracticeListeningSectionActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name="com.ihsanashari.simulasitoefl.ProfileActivity"
+            android:name=".menu.ScoresMenuActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name="com.ihsanashari.simulasitoefl.MainActivity"
+            android:name=".menu.TestingMenuActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".menu.PracticeMenuActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".ProfileActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name="com.ihsanashari.simulasitoefl.SplashActivity"
+            android:name=".SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

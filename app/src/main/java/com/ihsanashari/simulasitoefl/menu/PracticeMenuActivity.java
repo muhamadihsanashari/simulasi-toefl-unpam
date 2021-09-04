@@ -12,10 +12,10 @@ import android.widget.Button;
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.ihsanashari.simulasitoefl.MainActivity;
-import com.ihsanashari.simulasitoefl.practice.ListeningFragment;
+import com.ihsanashari.simulasitoefl.practice.PracticeListeningFragment;
 import com.ihsanashari.simulasitoefl.R;
-import com.ihsanashari.simulasitoefl.practice.ReadingFragment;
-import com.ihsanashari.simulasitoefl.practice.StructureFragment;
+import com.ihsanashari.simulasitoefl.practice.PracticeReadingFragment;
+import com.ihsanashari.simulasitoefl.practice.PracticeStructureFragment;
 import com.github.javiersantos.materialstyleddialogs.MaterialStyledDialog;
 
 public class PracticeMenuActivity extends AppCompatActivity implements View.OnClickListener{
@@ -45,11 +45,11 @@ public class PracticeMenuActivity extends AppCompatActivity implements View.OnCl
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.btn_listening){
-            getSupportFragmentManager().beginTransaction().add(R.id.fragments, new ListeningFragment()).commit();
+            getSupportFragmentManager().beginTransaction().add(R.id.fragments, new PracticeListeningFragment()).commit();
         } else if(v.getId() == R.id.btn_reading){
-            getSupportFragmentManager().beginTransaction().add(R.id.fragments, new ReadingFragment()).commit();
+            getSupportFragmentManager().beginTransaction().add(R.id.fragments, new PracticeReadingFragment()).commit();
         } else if(v.getId() == R.id.btn_structure){
-            getSupportFragmentManager().beginTransaction().add(R.id.fragments, new StructureFragment()).commit();
+            getSupportFragmentManager().beginTransaction().add(R.id.fragments, new PracticeStructureFragment()).commit();
         } else if(v.getId() == R.id.btn_mainmenu){
             Intent intent = new Intent(PracticeMenuActivity.this, MainActivity.class);
             startActivity(intent);

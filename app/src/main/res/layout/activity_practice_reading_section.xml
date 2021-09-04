@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="32dp"
     android:background="@color/white"
-    tools:context=".practice.StructureSectionActivity">
+    tools:context=".practice.PracticeReadingSectionActivity">
 
     <Button
         android:id="@+id/btn_exit_section"
@@ -20,46 +20,22 @@
         android:textAllCaps="false"
         app:backgroundTint="@null"/>
 
-    <TextView
-        android:id="@+id/tv_score"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        android:layout_below="@+id/btn_exit_section"
-        android:text="Score: 5"
-        android:textColor="@color/dark_grey"
-        android:fontFamily="@font/poppins_italic"
-        android:textSize="12dp"/>
-
-    <TextView
-        android:id="@+id/tv_question_number"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_score"
-        android:text="Question: 1/5"
-        android:textColor="@color/dark_grey"
-        android:fontFamily="@font/poppins_italic"
-        android:textSize="12dp"/>
-
-    <TextView
-        android:id="@+id/tv_count_down"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_exit_section"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="18dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="00:50"
-        android:textColor="@color/black"
-        android:textSize="24dp" />
-
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_question_number"
+        android:layout_below="@+id/btn_exit_section"
         android:layout_marginTop="18dp"
         android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Question: 1/x"
+            android:textColor="@color/dark_grey"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"/>
 
         <TextView
             android:id="@+id/tv_question"
@@ -68,7 +44,7 @@
             android:text="@string/dummy_text"
             android:textColor="@color/black"
             android:fontFamily="@font/poppins_regular"
-            android:textSize="12dp"/>
+            android:textSize="12sp"/>
 
         <RadioGroup
             android:id="@+id/radio_group"
@@ -83,9 +59,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_bold"
-                android:textSize="14sp"
                 android:textColor="@color/black"
-                android:buttonTint="@color/black"/>
+                android:buttonTint="@color/black"
+                android:textSize="14sp"/>
 
             <RadioButton
                 android:id="@+id/radio_button_2"

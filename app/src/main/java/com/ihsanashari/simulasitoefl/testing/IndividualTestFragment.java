@@ -1,5 +1,7 @@
 package com.ihsanashari.simulasitoefl.testing;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,60 +9,58 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.ihsanashari.simulasitoefl.R;
+import com.ihsanashari.simulasitoefl.practice.PracticeListeningSectionActivity;
+import com.ihsanashari.simulasitoefl.practice.PracticeReadingSectionActivity;
+import com.ihsanashari.simulasitoefl.practice.PracticeStructureSectionActivity;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link IndividualTestFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class IndividualTestFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    Button btnListeningTest, btnReadingTest, btnStructureTest;
 
     public IndividualTestFragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment IndividualTestFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static IndividualTestFragment newInstance(String param1, String param2) {
-        IndividualTestFragment fragment = new IndividualTestFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_individual_test, container, false);
+        View view = inflater.inflate(R.layout.fragment_individual_test, container, false);
+
+        btnListeningTest = (Button) view.findViewById(R.id.btn_listening_test);
+        btnReadingTest = (Button) view.findViewById(R.id.btn_reading_test);
+        btnStructureTest = (Button) view.findViewById(R.id.btn_structure_test);
+
+        btnListeningTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), PracticeListeningSectionActivity.class);
+                startActivity(intent);
+                ((Activity) getActivity()).overridePendingTransition(0,0);
+            }
+        });
+
+        btnReadingTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), PracticeReadingSectionActivity.class);
+                startActivity(intent);
+                ((Activity) getActivity()).overridePendingTransition(0,0);
+            }
+        });
+
+        btnStructureTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), TestingStructureSectionActivity.class);
+                startActivity(intent);
+                ((Activity) getActivity()).overridePendingTransition(0,0);
+            }
+        });
+
+        return view;
     }
 }

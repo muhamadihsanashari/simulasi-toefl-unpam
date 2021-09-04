@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    android:background="@color/white"
+    tools:context=".scores.ScoreStructureScoreActivity">
+
+    <TextView
+        android:id="@+id/tv_menu_scores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/playfair_bold"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:text="@string/scores"/>
+
+    <TextView
+        android:id="@+id/tv_high_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_menu_scores"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/stroke_tv"
+        android:ellipsize="end"
+        android:fontFamily="@font/poppins_bold"
+        android:padding="12dp"
+        android:text="High Score: 10"
+        android:textColor="@color/dark_grey"
+        android:textSize="18sp" />
+
+
+
+    <Button
+        android:id="@+id/btn_mainmenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_secondary"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/main_menu"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        app:backgroundTint="@null" />
+
+</RelativeLayout>

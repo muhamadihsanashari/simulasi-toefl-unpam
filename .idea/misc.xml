@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/UNIVERSITAS PAMULANG/SKRIPSI/SKRIPSI MUHAMAD IHSAN ASHARI/Aplikasi/app/src/main/res/layout/activity_listening_section.xml" value="0.10040983606557377" />
+        <entry key="..\:/UNIVERSITAS PAMULANG/SKRIPSI/SKRIPSI MUHAMAD IHSAN ASHARI/Aplikasi/app/src/main/res/layout/activity_practice_listening_section.xml" value="0.1212431693989071" />
+        <entry key="..\:/UNIVERSITAS PAMULANG/SKRIPSI/SKRIPSI MUHAMAD IHSAN ASHARI/Aplikasi/app/src/main/res/layout/activity_practice_reading_section.xml" value="0.22" />
+        <entry key="..\:/UNIVERSITAS PAMULANG/SKRIPSI/SKRIPSI MUHAMAD IHSAN ASHARI/Aplikasi/app/src/main/res/layout/activity_practice_structure_section.xml" value="0.168359375" />
+        <entry key="..\:/UNIVERSITAS PAMULANG/SKRIPSI/SKRIPSI MUHAMAD IHSAN ASHARI/Aplikasi/app/src/main/res/layout/activity_reading_score.xml" value="0.16666666666666666" />
+        <entry key="..\:/UNIVERSITAS PAMULANG/SKRIPSI/SKRIPSI MUHAMAD IHSAN ASHARI/Aplikasi/app/src/main/res/layout/activity_reading_section.xml" value="0.10040983606557377" />
+        <entry key="..\:/UNIVERSITAS PAMULANG/SKRIPSI/SKRIPSI MUHAMAD IHSAN ASHARI/Aplikasi/app/src/main/res/layout/activity_structure_score.xml" value="0.15" />
+        <entry key="..\:/UNIVERSITAS PAMULANG/SKRIPSI/SKRIPSI MUHAMAD IHSAN ASHARI/Aplikasi/app/src/main/res/layout/activity_structure_section.xml" value="0.10587431693989072" />
+        <entry key="..\:/UNIVERSITAS PAMULANG/SKRIPSI/SKRIPSI MUHAMAD IHSAN ASHARI/Aplikasi/app/src/main/res/layout/activity_testing_structure_section.xml" value="0.1" />
+        <entry key="..\:/UNIVERSITAS PAMULANG/SKRIPSI/SKRIPSI MUHAMAD IHSAN ASHARI/Aplikasi/app/src/main/res/layout/fragment_individual_test.xml" value="0.10587431693989072" />
+        <entry key="..\:/UNIVERSITAS PAMULANG/SKRIPSI/SKRIPSI MUHAMAD IHSAN ASHARI/Aplikasi/app/src/main/res/layout/fragment_listening.xml" value="0.10040983606557377" />
+        <entry key="..\:/UNIVERSITAS PAMULANG/SKRIPSI/SKRIPSI MUHAMAD IHSAN ASHARI/Aplikasi/app/src/main/res/layout/fragment_practice_listening.xml" value="0.1212431693989071" />
+        <entry key="..\:/UNIVERSITAS PAMULANG/SKRIPSI/SKRIPSI MUHAMAD IHSAN ASHARI/Aplikasi/app/src/main/res/layout/fragment_practice_reading.xml" value="0.1212431693989071" />
+        <entry key="..\:/UNIVERSITAS PAMULANG/SKRIPSI/SKRIPSI MUHAMAD IHSAN ASHARI/Aplikasi/app/src/main/res/layout/fragment_practice_structure.xml" value="0.168359375" />
+        <entry key="..\:/UNIVERSITAS PAMULANG/SKRIPSI/SKRIPSI MUHAMAD IHSAN ASHARI/Aplikasi/app/src/main/res/layout/fragment_reading.xml" value="0.10040983606557377" />
+        <entry key="..\:/UNIVERSITAS PAMULANG/SKRIPSI/SKRIPSI MUHAMAD IHSAN ASHARI/Aplikasi/app/src/main/res/layout/fragment_structure.xml" value="0.10040983606557377" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

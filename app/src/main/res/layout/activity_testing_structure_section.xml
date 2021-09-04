@@ -4,107 +4,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
     android:padding="32dp"
-    tools:context=".practice.ListeningSectionActivity">
+    android:background="@color/white"
+    tools:context=".testing.TestingStructureSectionActivity">
 
     <Button
         android:id="@+id/btn_exit_section"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/btn_cancel"
+        android:layout_height="56dp"
         android:layout_alignParentTop="true"
-        android:text="@string/exit_section"
-        android:textColor="@color/danger_color"
+        android:background="@drawable/btn_cancel"
         android:fontFamily="@font/poppins_regular"
+        android:text="@string/exit_section"
         android:textAllCaps="false"
-        app:backgroundTint="@null"/>
+        android:textColor="@color/danger_color"
+        app:backgroundTint="@null" />
 
-    <LinearLayout
-        android:id="@+id/view_audio_player"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/btn_exit_section"
+        android:text="Score: 0"
+        android:textColor="@color/dark_grey"
+        android:fontFamily="@font/poppins_italic"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/tv_question_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_score"
+        android:text="Question: 1/5"
+        android:textColor="@color/dark_grey"
+        android:fontFamily="@font/poppins_italic"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/tv_count_down"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btn_exit_section"
-        android:padding="2dp"
+        android:layout_alignParentEnd="true"
         android:layout_marginTop="18dp"
-        android:background="@drawable/btn_disable"
-        android:gravity="center">
+        android:fontFamily="@font/poppins_bold"
+        android:text="00:50"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
 
-        <ImageButton
-            android:id="@+id/bt_play"
-            android:layout_width="?attr/actionBarSize"
-            android:layout_height="?attr/actionBarSize"
-            android:layout_marginRight="12dp"
-            android:background="@drawable/btn_primary"
-            android:clickable="true"
-            android:focusable="true"
-            android:src="@drawable/ic_play"/>
-
-
-
-        <TextView
-            android:id="@+id/tv_song_current_duration"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:text="0:00"
-            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
-
-        <androidx.appcompat.widget.AppCompatSeekBar
-            android:id="@+id/seek_song_progressbar"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:progressBackgroundTint="@color/dark_grey"
-            android:progress="0" />
-
-        <TextView
-            android:id="@+id/tv_song_total_duration"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="12dp"
-            android:textColor="@color/black"
-            android:text="0:00"
-            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
-
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/view_audio_player"
+        android:layout_below="@+id/tv_question_number"
         android:layout_marginTop="18dp"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/soal"
+            android:id="@+id/tv_question"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/dummy_text"
             android:textColor="@color/black"
             android:fontFamily="@font/poppins_regular"
-            android:textSize="12dp"/>
+            android:textSize="12sp"/>
 
         <RadioGroup
-            android:id="@+id/radioGroup"
+            android:id="@+id/radio_group"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="36dp">
 
 
             <RadioButton
-                android:id="@+id/radioButton"
-                android:text="Real Madrid"
+                android:id="@+id/radio_button_1"
+                android:text="Option 1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_bold"
+                android:textSize="14sp"
                 android:textColor="@color/black"
-                android:buttonTint="@color/black"
-                android:textSize="14sp"/>
+                android:buttonTint="@color/black"/>
 
             <RadioButton
-                android:id="@+id/radioButton2"
-                android:text="Liverpool"
+                android:id="@+id/radio_button_2"
+                android:text="Option 2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_bold"
@@ -114,26 +99,26 @@
                 android:buttonTint="@color/black"/>
 
             <RadioButton
-                android:id="@+id/radioButton3"
-                android:text="Barcelona"
+                android:id="@+id/radio_button_3"
+                android:text="Option 3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_bold"
                 android:textSize="14sp"
                 android:layout_marginTop="18dp"
                 android:textColor="@color/black"
-                android:buttonTint="@color/black" />
+                android:buttonTint="@color/black"/>
 
             <RadioButton
-                android:id="@+id/radioButton4"
-                android:text="Juventus"
+                android:id="@+id/radio_button_4"
+                android:text="Option 4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_bold"
                 android:textSize="14sp"
                 android:layout_marginTop="18dp"
                 android:textColor="@color/black"
-                android:buttonTint="@color/black" />
+                android:buttonTint="@color/black"/>
 
         </RadioGroup>
 
@@ -148,8 +133,8 @@
         android:background="@drawable/btn_primary"
         android:fontFamily="@font/poppins_regular"
         android:text="@string/prev"
-        android:textColor="@color/black"
         android:textAllCaps="false"
+        android:textColor="@color/black"
         app:backgroundTint="@null" />
 
     <Button
@@ -161,8 +146,8 @@
         android:background="@drawable/btn_primary"
         android:fontFamily="@font/poppins_regular"
         android:text="@string/next"
-        android:textColor="@color/black"
         android:textAllCaps="false"
+        android:textColor="@color/black"
         app:backgroundTint="@null" />
 
 </RelativeLayout>

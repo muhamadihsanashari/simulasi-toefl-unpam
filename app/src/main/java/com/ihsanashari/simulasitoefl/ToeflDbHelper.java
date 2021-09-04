@@ -6,7 +6,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-
 import com.ihsanashari.simulasitoefl.ToeflContract.*;
 
 import java.util.ArrayList;
@@ -48,15 +47,15 @@ public class ToeflDbHelper extends SQLiteOpenHelper {
     }
 
     private void fillQuestionsTable() {
-        Question q1 = new Question("Jawaban A benar", "A", "B", "C","D", 1);
+        Question q1 = new Question("John Butterfield _____ the Southern Overland Mail Company with two stagecoaches in 1858.", "he set up", "setting up", "set up","the setup", 3);
         addQuestion(q1);
-        Question q2 = new Question("Jawaban B benar", "A", "B", "C","D", 2);
+        Question q2 = new Question("The radiation piercing the atmosphere _____ of tanning or burning in humans.", "it is the cause", "causing it", "is the cause","the cause", 3);
         addQuestion(q2);
-        Question q3 = new Question("Jawaban C benar", "A", "B", "C","D", 3);
+        Question q3 = new Question("The _____ during an earthquake are caused by seismic waves.", "actually vibrate", "actual vibrations", "vibrations happen","from the actual vibrations", 2);
         addQuestion(q3);
-        Question q4 = new Question("Jawaban D benar", "A", "B", "C","D", 4);
+        Question q4 = new Question("During the Middle Ages, _____, large sets of bells with as many as 70 bells, first became popular.", "with carillons", "carillons are", "carillons have","carillons", 4);
         addQuestion(q4);
-        Question q5 = new Question("Jawaban A benar lagi!", "A", "B", "C","D", 1);
+        Question q5 = new Question("The tea plant, an evergreen shrub pruned to three to five feet high, _____ mild, semitropical climate in which to grow.", "the need for", "it needs", "to need","needs a", 4);
         addQuestion(q5);
     }
 

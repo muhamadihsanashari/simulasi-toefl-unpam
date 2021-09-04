@@ -14,19 +14,19 @@ import android.widget.Button;
 import com.ihsanashari.simulasitoefl.R;
 
 
-public class ListeningFragment extends Fragment{
+public class PracticeListeningFragment extends Fragment{
 
     Button btnShortDialogue, btnCasualConversation, btnAcademicDiscussion, btnAcademicLectures;
 
 
-    public ListeningFragment() {
+    public PracticeListeningFragment() {
         // Required empty public constructor
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_listening, container, false);
+        View view = inflater.inflate(R.layout.fragment_practice_listening, container, false);
 
 
         btnShortDialogue = (Button) view.findViewById(R.id.btn_shortdialogues);
@@ -37,7 +37,7 @@ public class ListeningFragment extends Fragment{
         btnShortDialogue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), ListeningSectionActivity.class);
+                Intent intent = new Intent(getActivity(), PracticeListeningSectionActivity.class);
                 startActivity(intent);
                 ((Activity) getActivity()).overridePendingTransition(0,0);
             }
@@ -46,7 +46,7 @@ public class ListeningFragment extends Fragment{
         btnCasualConversation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), ListeningSectionActivity.class);
+                Intent intent = new Intent(getActivity(), PracticeListeningSectionActivity.class);
                 startActivity(intent);
                 ((Activity) getActivity()).overridePendingTransition(0,0);
             }
@@ -55,7 +55,7 @@ public class ListeningFragment extends Fragment{
         btnAcademicDiscussion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), ListeningSectionActivity.class);
+                Intent intent = new Intent(getActivity(), PracticeListeningSectionActivity.class);
                 startActivity(intent);
                 ((Activity) getActivity()).overridePendingTransition(0,0);
             }
@@ -64,7 +64,7 @@ public class ListeningFragment extends Fragment{
         btnAcademicLectures.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), ListeningSectionActivity.class);
+                Intent intent = new Intent(getActivity(), PracticeListeningSectionActivity.class);
                 startActivity(intent);
                 ((Activity) getActivity()).overridePendingTransition(0,0);
             }

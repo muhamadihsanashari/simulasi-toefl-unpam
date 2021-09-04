@@ -14,18 +14,18 @@ import android.widget.Button;
 import com.ihsanashari.simulasitoefl.R;
 
 
-public class StructureFragment extends Fragment {
+public class PracticeStructureFragment extends Fragment {
 
     Button btnStructure, btnWrittenExpression;
 
-    public StructureFragment() {
+    public PracticeStructureFragment() {
         // Required empty public constructor
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_structure, container, false);
+        View view = inflater.inflate(R.layout.fragment_practice_structure, container, false);
 
         btnStructure = (Button) view.findViewById(R.id.btn_structure);
         btnWrittenExpression = (Button) view.findViewById(R.id.btn_written_exp);
@@ -33,7 +33,7 @@ public class StructureFragment extends Fragment {
         btnStructure.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), StructureSectionActivity.class);
+                Intent intent = new Intent(getActivity(), PracticeStructureSectionActivity.class);
                 startActivity(intent);
                 ((Activity) getActivity()).overridePendingTransition(0,0);
             }
@@ -42,7 +42,7 @@ public class StructureFragment extends Fragment {
         btnWrittenExpression.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), StructureSectionActivity.class);
+                Intent intent = new Intent(getActivity(), PracticeStructureSectionActivity.class);
                 startActivity(intent);
                 ((Activity) getActivity()).overridePendingTransition(0,0);
             }
