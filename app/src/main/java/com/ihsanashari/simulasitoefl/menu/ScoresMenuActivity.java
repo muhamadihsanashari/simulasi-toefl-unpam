@@ -75,6 +75,9 @@ public class ScoresMenuActivity extends AppCompatActivity implements View.OnClic
             startActivity(intent);
             finish();
         } else if (v.getId() == R.id.btn_structure_score) {
+
+//            SCORE RESULT
+
             Intent intent = new Intent(ScoresMenuActivity.this, ScoreStructureScoreActivity.class);
             startActivityForResult(intent, REQUEST_CODE_QUIZ);
         }

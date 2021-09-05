@@ -9,7 +9,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 import com.ihsanashari.simulasitoefl.ToeflContract.*;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class ToeflDbHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "SimulasiToefl.db";
@@ -33,7 +32,8 @@ public class ToeflDbHelper extends SQLiteOpenHelper {
                 QuestionsTable.COLUMN_OPTION2 + " TEXT, " +
                 QuestionsTable.COLUMN_OPTION3 + " TEXT, " +
                 QuestionsTable.COLUMN_OPTION4 + " TEXT, " +
-                QuestionsTable.COLUMN_ANSWER_NUM + " INTEGER" +
+                QuestionsTable.COLUMN_ANSWER_NUM + " INTEGER," +
+                QuestionsTable.COLUMN_DIFFICULTY + " TEXT" +
                 ")";
 
         db.execSQL(SQL_CREATE_QUESTION_TABLE);
@@ -47,16 +47,24 @@ public class ToeflDbHelper extends SQLiteOpenHelper {
     }
 
     private void fillQuestionsTable() {
-        Question q1 = new Question("John Butterfield _____ the Southern Overland Mail Company with two stagecoaches in 1858.", "he set up", "setting up", "set up","the setup", 3);
+        Question q1 = new Question("Easy: A is correct",
+                "A", "B", "C","D", 1, Question.DIFFICULTY_EASY);
         addQuestion(q1);
-        Question q2 = new Question("The radiation piercing the atmosphere _____ of tanning or burning in humans.", "it is the cause", "causing it", "is the cause","the cause", 3);
+        Question q2 = new Question("Medium: B is correct",
+                "A", "B", "C","D", 2, Question.DIFFICULTY_MEDIUM);
         addQuestion(q2);
-        Question q3 = new Question("The _____ during an earthquake are caused by seismic waves.", "actually vibrate", "actual vibrations", "vibrations happen","from the actual vibrations", 2);
+        Question q3 = new Question("Medium: C is correct",
+                "A", "B", "C","D", 3, Question.DIFFICULTY_MEDIUM);
         addQuestion(q3);
-        Question q4 = new Question("During the Middle Ages, _____, large sets of bells with as many as 70 bells, first became popular.", "with carillons", "carillons are", "carillons have","carillons", 4);
+        Question q4 = new Question("Hard: A is correct",
+                "A", "B", "C","D", 1, Question.DIFFICULTY_HARD);
         addQuestion(q4);
-        Question q5 = new Question("The tea plant, an evergreen shrub pruned to three to five feet high, _____ mild, semitropical climate in which to grow.", "the need for", "it needs", "to need","needs a", 4);
+        Question q5 = new Question("Hard: B is correct",
+                "A", "B", "C","D", 2, Question.DIFFICULTY_HARD);
         addQuestion(q5);
+        Question q6 = new Question("Hard: C is correct",
+                "A", "B", "C","D", 3, Question.DIFFICULTY_HARD);
+        addQuestion(q6);
     }
 
     private void addQuestion(Question question) {
@@ -67,11 +75,12 @@ public class ToeflDbHelper extends SQLiteOpenHelper {
         cv.put(QuestionsTable.COLUMN_OPTION3, question.getOption3());
         cv.put(QuestionsTable.COLUMN_OPTION4, question.getOption4());
         cv.put(QuestionsTable.COLUMN_ANSWER_NUM, question.getAnswerNumber());
+        cv.put(QuestionsTable.COLUMN_DIFFICULTY, question.getDifficulty());
         db.insert(QuestionsTable.TABLE_NAME, null, cv);
     }
 
-    public List<Question> getAllQuestions() {
-        List<Question> questionList = new ArrayList<>();
+    public ArrayList<Question> getAllQuestions() {
+        ArrayList<Question> questionList = new ArrayList<>();
         db = getReadableDatabase();
         Cursor c = db.rawQuery("SELECT * FROM " + QuestionsTable.TABLE_NAME, null);
 
@@ -84,6 +93,33 @@ public class ToeflDbHelper extends SQLiteOpenHelper {
                 question.setOption3(c.getString(c.getColumnIndex(QuestionsTable.COLUMN_OPTION3)));
                 question.setOption4(c.getString(c.getColumnIndex(QuestionsTable.COLUMN_OPTION4)));
                 question.setAnswerNumber(c.getInt(c.getColumnIndex(QuestionsTable.COLUMN_ANSWER_NUM)));
+                question.setDifficulty(c.getString(c.getColumnIndex(QuestionsTable.COLUMN_DIFFICULTY)));
+                questionList.add(question);
+            } while (c.moveToNext());
+        }
+
+        c.close();
+        return questionList;
+    }
+
+    public ArrayList<Question> getQuestions(String difficulty) {
+        ArrayList<Question> questionList = new ArrayList<>();
+        db = getReadableDatabase();
+
+        String[] selectionArgs = new String[]{difficulty};
+        Cursor c = db.rawQuery("SELECT * FROM " + QuestionsTable.TABLE_NAME +
+                " WHERE " + QuestionsTable.COLUMN_DIFFICULTY + " = ?", selectionArgs);
+
+        if (c.moveToFirst()) {
+            do {
+                Question question = new Question();
+                question.setQuestion(c.getString(c.getColumnIndex(QuestionsTable.COLUMN_QUESTION)));
+                question.setOption1(c.getString(c.getColumnIndex(QuestionsTable.COLUMN_OPTION1)));
+                question.setOption2(c.getString(c.getColumnIndex(QuestionsTable.COLUMN_OPTION2)));
+                question.setOption3(c.getString(c.getColumnIndex(QuestionsTable.COLUMN_OPTION3)));
+                question.setOption4(c.getString(c.getColumnIndex(QuestionsTable.COLUMN_OPTION4)));
+                question.setAnswerNumber(c.getInt(c.getColumnIndex(QuestionsTable.COLUMN_ANSWER_NUM)));
+                question.setDifficulty(c.getString(c.getColumnIndex(QuestionsTable.COLUMN_DIFFICULTY)));
                 questionList.add(question);
             } while (c.moveToNext());
         }

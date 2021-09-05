@@ -16,5 +16,6 @@ public final class ToeflContract {
         public static final String COLUMN_OPTION3 = "option3";
         public static final String COLUMN_OPTION4 = "option4";
         public static final String COLUMN_ANSWER_NUM = "answer_num";
+        public static final String COLUMN_DIFFICULTY = "difficulty";
     }
 }
